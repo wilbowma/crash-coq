@@ -1,6 +1,6 @@
 all: test
 
-head.ml: head-eg.v
+head.ml: head_eg.v
 	coqtop -l $< -batch
 
 main.ml: head.ml caller.ml
