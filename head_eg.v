@@ -10,7 +10,7 @@ Definition head {A} {n : Nat} (v : List A (1 + n)) :=
   | cons _  h _ t => h
   end.
 
-(* Example invalid := head nil. *)
+Fail Example invalid := head nil.
 Example valid : (Nat -> Nat) := head (cons _ (fun x => x) 0 (nil _)).
 Print valid.
 
